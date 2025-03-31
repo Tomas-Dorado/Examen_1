@@ -5,6 +5,8 @@ class Rectangulo:
         self.punto_inicial = punto_inicial
         self.punto_final = punto_final
 
+    def __str__(self):
+        return f"Rectángulo: {self.punto_inicial} a {self.punto_final}"
     def base(self):
         return abs(self.punto_final.x - self.punto_inicial.x)
 
